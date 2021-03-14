@@ -1,0 +1,65 @@
+@model IEnumerable<Domain.DiffeDB>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.g)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.p)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HelKey)
+            </th>
+             <th>
+                            @Html.DisplayNameFor(model => model.UserId)
+                        </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.g)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.p)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HelKey)
+            </td>
+            <td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

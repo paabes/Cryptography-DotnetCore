@@ -1,0 +1,48 @@
+@model Domain.DiffeDB
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DiffeDB</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.g)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.g)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.p)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.p)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.a)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.a)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.b)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.b)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HelKey)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HelKey)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

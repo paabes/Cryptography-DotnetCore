@@ -1,0 +1,49 @@
+@model Domain.RsaDecDb
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>RsaDecDb</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RsaDecDbId" />
+            <div class="form-group">
+                <label asp-for="n" class="control-label"></label>
+                <input asp-for="n" class="form-control" />
+                <span asp-validation-for="n" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="d" class="control-label"></label>
+                <input asp-for="d" class="form-control" />
+                <span asp-validation-for="d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plaintext" class="control-label"></label>
+                <input asp-for="Plaintext" class="form-control" />
+                <span asp-validation-for="Plaintext" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ciphertext" class="control-label"></label>
+                <input asp-for="Ciphertext" class="form-control" />
+                <span asp-validation-for="Ciphertext" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

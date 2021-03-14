@@ -1,0 +1,54 @@
+@model Domain.DiffeDB
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>DiffeDB</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="g" class="control-label"></label>
+                <input asp-for="g" class="form-control" />
+                <span asp-validation-for="g" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="p" class="control-label"></label>
+                <input asp-for="p" class="form-control" />
+                <span asp-validation-for="p" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="a" class="control-label"></label>
+                <input asp-for="a" class="form-control" />
+                <span asp-validation-for="a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="b" class="control-label"></label>
+                <input asp-for="b" class="form-control" />
+                <span asp-validation-for="b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HelKey" class="control-label"></label>
+                <input asp-for="HelKey" class="form-control" />
+                <span asp-validation-for="HelKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

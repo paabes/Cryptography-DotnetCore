@@ -1,0 +1,63 @@
+@model Domain.RsaDb
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>RsaDb</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.p)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.p)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.q)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.q)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.n)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.n)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.e)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.e)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.d)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.d)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Plaintext)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Plaintext)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ciphertext)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ciphertext)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="RsaDbId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
