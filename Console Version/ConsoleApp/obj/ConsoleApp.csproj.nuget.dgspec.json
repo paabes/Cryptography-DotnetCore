@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/ConsoleApp.csproj": {}
+    "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/ConsoleApp.csproj": {}
   },
   "projects": {
-    "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/ConsoleApp.csproj": {
+    "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/ConsoleApp.csproj",
+        "projectUniqueName": "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/ConsoleApp.csproj",
+        "projectPath": "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/ConsoleApp.csproj",
         "packagesPath": "/Users/papunaabesadze/.nuget/packages/",
-        "outputPath": "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/obj/",
+        "outputPath": "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

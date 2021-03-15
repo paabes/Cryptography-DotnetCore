@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zwbK5JxEK31i6XBSXpkSUDDZmbOmi48MFfAV2rVQTioRBPqvz6inaOpUJu+p8jJZfq6pKuZREfdE/s1N2XENpg==",
+  "dgSpecHash": "SwEyy5HXSUBr0zz1xoCulcxFEeOpaPix4peilwMv2ZaoixBD9IzvLDzVNho5tZInFHCVZKFkYQjbSOtK2f1zRA==",
   "success": true,
-  "projectFilePath": "/Users/papunaabesadze/Desktop/ics0031-2020f/HW01/ConsoleApp/ConsoleApp.csproj",
+  "projectFilePath": "/Users/papunaabesadze/Desktop/repos/Cryptography-DotnetCore/Console Version/ConsoleApp/ConsoleApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
